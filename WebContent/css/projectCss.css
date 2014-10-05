@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+html, body 
+{
+  height: 100%;
+}
+
+.container 
+{
+	height: 90%;
+	width: 100%;
+	/*background: #CCD3E3;*/
+}
+
+.footer
+{
+	font-family: "arial";
+}
+
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
+.navbar {min-height:30px !important}
+
+
+.sidemenuContainer
+{
+	width: 20%;
+}
