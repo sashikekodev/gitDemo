@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 
 
-<div class="container">
+<div class="container" ng-controller="MessageController">
 	<h4>Messages</h4>
 	<mysample/>
-
+	<br/>
+	<div ng-show="val">Hey</div>
+	<div ng-hide="val">You</div>
+	<button ng-click="hide()">Click Me</button>
 </div>
 

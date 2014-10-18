@@ -32,3 +32,13 @@ html, body
 	margin-left: 15px;
 	margin-right: 15px;"
 }
+
+.orange
+{
+	color: orange;
+}
+
+.italic
+{
+	font-style: italic;
+}

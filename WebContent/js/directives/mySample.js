@@ -15,7 +15,7 @@
 instead of using the link, if you are only going to use html, you can
 use the template: and angular will automatically compile the for you.
 */
-myApp.directive("mysample", function($compile){
+angular.module("GitApp").directive("mysample", function($compile){
 	return {
 		restrict: "E",
 		template: "<input type='text' ng-model='sampleData' /> {{sampleData}}<br/>"
