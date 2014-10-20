@@ -12,3 +12,4 @@ angular.module("GitApp", ["ngRoute"])
 			.when("/login", 	{templateUrl: 'templates/login.html'})
 			.otherwise({redirectTo: '/home'});
 	});
+
