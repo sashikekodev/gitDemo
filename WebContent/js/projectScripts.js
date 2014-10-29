@@ -2,7 +2,7 @@
  * 
  */
 
-angular.module("GitApp", ["ngRoute"])
+var app = angular.module("GitApp", ["ngRoute"])
 	.config(function($routeProvider)
 	{
 		$routeProvider

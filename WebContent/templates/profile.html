@@ -1,3 +1,21 @@
 <!DOCTYPE html>
-
-		<h4>Profile</h4>
+<div class="container">
+	<h4>Profile</h4>
+	
+	<div ng-controller="profile1Controller">
+		<input ng-model="message" />
+		<button ng-click="sendMessage();">Send Message</button>
+	</div>
+	
+	<div ng-controller="profile2Controller">
+		<input ng-model="message" />
+		<p>{{mcount}}</p>
+	</div>
+	
+	<div ng-controller="profile3Controller">
+		<input ng-model="message" />
+		<button ng-click="sendUp();">Send Message</button>
+		<p>{{mcount}}</p>
+	</div>
+</div>
+		

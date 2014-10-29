@@ -1,8 +1,8 @@
 /**
  * 
  */
-var app = angular.module("GitApp")
-	.controller("MessageController", ["$scope", "messageValueService", "myVal", "myVal2", function($scope, messageValueService, myVal, myVal2)
+	app.controller("MessageController", ["$scope", "messageValueService", 
+	                                  "myVal", "myVal2","testService", function($scope, messageValueService, myVal, myVal2, testService)
 	{
 		console.log(messageValueService, myVal(), myVal2);
 		
@@ -13,9 +13,32 @@ var app = angular.module("GitApp")
 		{
 			$scope.val = !$scope.val;
 		};
+		
+
+		console.log(testService.getX());
+		testService.setX("Cats are cool");
+		console.log(testService.getX());
+		
 	}])
 	.value("myVal", function(){return "myVal";})
 	.value("myVal2", {text: "myVal2"});
 	
 
 	app.constant("messageValueService", {msg: "This is the message value service"});
+	
+	
+	
+	app.service("testService", function()
+	{
+		var  x = "what?";
+		
+		this.getX = function()
+		{
+			return x;
+		};
+		
+		this.setX = function(z)
+		{
+			x = z;
+		};
+	});
